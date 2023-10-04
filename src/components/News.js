@@ -16,25 +16,7 @@ export default function News() {
     description: "My Description",
     imageUrl: "https://fastly.picsum.photos/id/216/200/300.jpg?hmac=c3OXbiUxWPMgwnaFpX8ZAfBL5TZzWjnof6mb4OwuSPs"
   }]);
-
-  // const setData = ({
-  //   setSampleData
-  // })
-
-
-  // let sampleJson = [{
-  //   title: "My Title",
-  //   description: "My Description",
-  //   imageUrl: "https://fastly.picsum.photos/id/216/200/300.jpg?hmac=c3OXbiUxWPMgwnaFpX8ZAfBL5TZzWjnof6mb4OwuSPs"
-  // },{
-  //   title: "My Title2",
-  //   description: "My Description",
-  //   imageUrl: "https://fastly.picsum.photos/id/216/200/300.jpg?hmac=c3OXbiUxWPMgwnaFpX8ZAfBL5TZzWjnof6mb4OwuSPs"
-  // },{
-  //   title: "My Title3",
-  //   description: "My Description",
-  //   imageUrl: "https://fastly.picsum.photos/id/216/200/300.jpg?hmac=c3OXbiUxWPMgwnaFpX8ZAfBL5TZzWjnof6mb4OwuSPs"
-  // }]
+  
 
   return (
     <>

@@ -12,7 +12,7 @@ export default function NewsItem(props) {
             <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text" style={{"color": "rgb(165, 165, 165)"}}>{props.description}</p>
-                <p className="card-text"><small className="text-body-secondary">Last updated 2 mins ago</small></p>
+                <p className="card-text"><small className="text-body-secondary">Last updated 1 mins ago</small></p>
             </div>
             </div>
         </div>

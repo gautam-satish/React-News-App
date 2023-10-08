@@ -268,6 +268,14 @@ export default function News() {
 
   const [sampleData, setSampleData] = useState([]);
 
+  const handleNextClick = (()=>{
+    console.log('Next')
+  })
+
+  const handlePreviousClick = (()=>{
+    console.log('Previous')
+  })
+
   useEffect(() => {
     setSampleData(data);
     // let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=b5dc418e903a4c109b766fabcc3eab31";
@@ -279,17 +287,21 @@ export default function News() {
     //   .catch(error => console.error('Error:', error));
   }, []);
 
-
   return (
     <>
-    <div className="container">
-      <h2>Top Headlines</h2>
+    <div className="container my-3">
+      <h1>Top Headlines</h1>
       <div className='row'>
         {sampleData.map((element)=> {
          return <div className='col md-4' key={element.url}>
               <NewsItem imageUrl={element.urlToImage} title={element.title} description={element.description} url={element.url}/>
           </div>  
         })} 
+      </div>
+      <div className='container d-flex justify-content-between'>
+        <button className='btn btn-light' onClick={handlePreviousClick} >&larr; Previous</button>
+        <button className='btn btn-light' onClick={handleNextClick} >Next &rarr;</button>
+        
       </div>
     </div>
     </>
